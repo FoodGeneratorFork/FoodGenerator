@@ -50,7 +50,6 @@ CSV.read('database/relationships.csv',
                                         'ingredient_details': row[1],
                                         'structured_ingredient': row[0] })} 
 
-
 CSV.read('database/recipes.csv',
   {:col_sep => '|'}).map { |row| recipes.save({ 
                                         'id': row[0],
